@@ -53,6 +53,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
             image.setVisibility(View.GONE);
         }
 
+        ImageView ic = listItemView.findViewById(R.id.ic);
+        ic.setImageResource(currentWord.getIcResourceId());
+
         // Set the theme color for the list item
         View textContainer = listItemView.findViewById(R.id.text_container);
         // Find the color that the resource ID maps to
